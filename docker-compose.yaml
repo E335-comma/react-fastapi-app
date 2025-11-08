@@ -1,6 +1,6 @@
 services:
   api-server:
-    image: fastapi-app:latest
+    image: <Repository_URI>
     container_name: api_server
     ports:
       - "8000:8000"
@@ -8,7 +8,7 @@ services:
       - PORT=8000
   
   frontend:
-    image: react-app:latest
+    image: <Repository_URI>
     container_name: client_server
     depends_on: 
       - api-server

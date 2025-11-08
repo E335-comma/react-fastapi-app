@@ -54,6 +54,9 @@ sudo apt install docker.io docker-compose
 ```
 - Install awscli:
 ```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 ```
 - Authenticate into AWS:
 ```bash
@@ -70,7 +73,8 @@ docker-compose up --build
 ```
 - Test react-fastapi-app using the EC2 instance public Ip.
 
-You can check my result using the ec2 public ip below:
+You can check my deployed dockerized app using the ec2 public ip below:
+http://16.144.145.25:3000
 
 
 
